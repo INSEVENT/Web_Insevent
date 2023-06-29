@@ -1,14 +1,18 @@
 import './App.css';
 import Navi from './component/Navi.js';
 import Carou from './section/Carou';
+import About from './section/About';
 
 function App() {
   return (
     <div className="App">
       <Navi/>
-      <header className="App-header">
+      <div className="sec1">
         <Carou/>
-      </header>
+      </div>
+      <div className='sec2'>
+        <About/>
+      </div>
     </div>
   );
 }
