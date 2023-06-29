@@ -1,7 +1,16 @@
 .App {
   text-align: center;
+  font-family: monospace;
+  margin: 0;
 }
-
+.Nav{
+  background-color: rgba(1,0,2,255);
+  border-style:solid;
+  border-top:rgba(1,0,2,255) ;
+  border-left: rgba(1,0,2,255);
+  border-right: rgba(1,0,2,255);
+  border-bottom-color: rgba(3,31,75,255);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,9 +21,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.event{
+  margin-left: 3px;
+  background-color: white;
+  color: black;
+}
 .App-header {
-  background-color: #282c34;
+  background-image: url(./assets/bgin7.png);
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +37,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +48,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+.carou{
+  min-height: 100vh;
+}
+.caroucapt{
+  padding-bottom: 7%;
 }
