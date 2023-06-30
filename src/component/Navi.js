@@ -35,10 +35,25 @@ function Navi() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-center flex-grow-1">
-                <Nav.Link href="#home"><Linkobj to="Home" activeClass="active" spy={true} smooth={true} offset={0} duration={500}>HOME <TbPointFilled/></Linkobj></Nav.Link>
-                <Nav.Link href="#about"><Linkobj to="About" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>ABOUT <TbPointFilled/></Linkobj></Nav.Link>
-                <Nav.Link href="#competition"><Linkobj to="Comp" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>COMPETITION <TbPointFilled/></Linkobj></Nav.Link>
-                <Nav.Link href="#talkshow"><Linkobj to="Talkshow" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>TALKSHOW <TbPointFilled/></Linkobj></Nav.Link>
+                <Nav.Link><Linkobj to="Home" activeClass="active" spy={true} smooth={true} offset={0} duration={500}>
+                  <Nav.Link href='#Home'>
+                  HOME <TbPointFilled/>
+                  </Nav.Link>
+                  </Linkobj></Nav.Link>
+                <Nav.Link ><Linkobj to="About" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>
+                  <Nav.Link href='#About'>
+                  ABOUT <TbPointFilled/>
+                  </Nav.Link></Linkobj></Nav.Link>
+                <Nav.Link ><Linkobj to="Comp" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>
+                  <Nav.Link href='#Competition'>
+                  COMPETITION <TbPointFilled/>
+                  </Nav.Link>
+                  </Linkobj></Nav.Link>
+                <Nav.Link ><Linkobj to="Talkshow" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>
+                <Nav.Link href='#Talkshow'>
+                  TALKSHOW <TbPointFilled/>
+                  </Nav.Link>
+                  </Linkobj></Nav.Link>
                 </Nav>
                 <Nav>
                 <Nav.Link href="#login">LOGIN</Nav.Link>

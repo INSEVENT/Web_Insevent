@@ -14,9 +14,11 @@ function App() {
         <div id='Home'></div>
         <Carou/>
       </div>
+      <div>
       <div className='sec2'>
         <div id='About'></div>
         <About/>
+      </div>
       </div>
       <div className='sec1'>
         <div id='Comp'></div>
