@@ -204,6 +204,20 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
+  .sponsor{
+    font-size: 50px;
+  }
+  .header-ts{
+    font-size: 70px;
+    min-width: 100%;
+    color: transparent;
+    -webkit-text-stroke: 5px rgba(3,31,75,255);
+    text-shadow: 15px 30px 0px rgba(3,31,75,1);
+  }
+  .ts{
+    font-size: 50px;
+    color: white;
+  }
   .carou{
     min-height: 50vh;
   }

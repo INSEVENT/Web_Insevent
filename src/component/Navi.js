@@ -56,7 +56,7 @@ function Navi() {
                   </Linkobj></Nav.Link>
                 </Nav>
                 <Nav>
-                <Nav.Link href="#login">LOGIN</Nav.Link>
+                <Nav.Link ><Nav.Link href="#login">LOGIN</Nav.Link></Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
