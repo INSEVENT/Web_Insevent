@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import { Nav } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import cardData from "../data/card";
+import { BiChevronRight } from "react-icons/bi";
 
 function Blog() {
   return (
@@ -12,7 +13,7 @@ function Blog() {
         className="text-light"
         style={{ minWidth: "100%", minHeight: "100vh" }}
       >
-        <h1 className="mb-4">Short heading goes here</h1>
+        <h1 className="mb-4 fw-bold">Short heading goes here</h1>
         <p className="mb-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
@@ -52,7 +53,10 @@ function Blog() {
             {cardData.map((card, idx) => (
               <Col key={idx}>
                 <Card>
-                  <div className="d-flex align-items-center">
+                  <div
+                    className="d-flex align-items-center"
+                    style={{ fontSize: "14px" }}
+                  >
                     <Card.Img
                       variant=""
                       src={card.imgSrc}
@@ -61,10 +65,29 @@ function Blog() {
                     />
                     <Card.Body className="text-start">
                       <div>
-                        <Card.Text>{card.category}</Card.Text>
-                        <Card.Title>{card.title}</Card.Title>
+                        <Card.Text>
+                          <div className="d-flex align-items-center">
+                            <span
+                              className="bg-dark text-light d-inline-block p-1"
+                              style={{ fontSize: "10px" }}
+                            >
+                              {card.category}
+                            </span>
+                            <span className="ms-2" style={{ fontSize: "10px" }}>
+                              {card.time}
+                            </span>
+                          </div>
+                        </Card.Text>
+                        <Card.Title className="fw-bold">
+                          {card.title}
+                        </Card.Title>
                         <Card.Text>{card.description}</Card.Text>
-                        <Card.Link>{card.readMore}</Card.Link>
+                        <Card.Link
+                          href="#"
+                          className="text-decoration-none text-dark"
+                        >
+                          Read More <BiChevronRight className="ms-1" />
+                        </Card.Link>
                       </div>
                     </Card.Body>
                   </div>
