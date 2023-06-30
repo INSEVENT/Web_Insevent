@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { about } from "../card/About";
+import { deskripsi_event } from "../data/about";
 import { Image } from "react-bootstrap";
 import img1 from "../assets/logo.png";
 
@@ -18,8 +18,8 @@ function About() {
         <Row>
           <Col style={{textAlign:'justify'}} xs={6}>
             <h2>About This Event</h2>
-            <p className="text-about fs-6">{about.text}</p>
-            <p className="text-about fs-6">{about.text2}</p>
+            <p className="text-about fs-6">{deskripsi_event.text}</p>
+            <p className="text-about fs-6">{deskripsi_event.text2}</p>
           </Col>
           <Col>
             <Image
@@ -33,3 +33,6 @@ function About() {
     </div>
   );
 }
+
+export default About;
+
