@@ -21,18 +21,11 @@ function Blog() {
       const paragraph = paragraphRef.current;
       const nav = navRef.current;
       const headingTop = heading.getBoundingClientRect().top;
-      const paragraphTop = paragraph.getBoundingClientRect().top;
       const navTop = nav.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
 
       if (headingTop < windowHeight && !showContent) {
         if (headingTop + heading.offsetHeight > 0) {
-          setShowContent(true);
-        }
-      }
-
-      if (paragraphTop < windowHeight && !showContent) {
-        if (paragraphTop + paragraph.offsetHeight > 0) {
           setShowContent(true);
         }
       }
@@ -62,9 +55,7 @@ function Blog() {
   return (
     <div className="m-5">
       <Container className="text-light" style={{ minWidth: "100%", minHeight: "100vh" }}>
-        <h1 ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold' : ''}>Short heading goes here</h1>
-        <p ref={paragraphRef} className={showContent ? 'slide-Y mb-5' : ''}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+        <h1 ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold header-blog' : ''}>Short heading goes here</h1>
         <div ref={navRef} className={showContent ? 'slide-Y fs-6 d-flex align-items-center justify-content-center mb-5' : ''}>
           <Nav variant="pills" defaultActiveKey="#" className="flex-wrap">
             <Nav.Item>
@@ -99,7 +90,7 @@ function Blog() {
           <Row xs={1} md={2} className="g-4">
             {cardData.map((card, idx) => (
               <Col key={idx} ref={(el) => (cardRefs.current[idx] = el)} className={showContent ? `slide-Y${idx + 1}` : ''}>
-                <Card>
+                <Card className="card-blog">
                   <div className="d-flex align-items-center" style={{ fontSize: "14px" }}>
                     <Card.Img variant="" src={card.imgSrc} alt="Card Image" style={{ maxWidth: "25%", maxHeight: "25%" }} />
                     <Card.Body className="text-start">
@@ -116,7 +107,7 @@ function Blog() {
                         </Card.Text>
                         <Card.Title className="fw-bold">{card.title}</Card.Title>
                         <Card.Text>{card.description}</Card.Text>
-                        <Card.Link href="#" className="text-decoration-none text-dark">
+                        <Card.Link href="#" className="text-decoration-none text-light">
                           Read More <BiChevronRight className="ms-1" />
                         </Card.Link>
                       </div>

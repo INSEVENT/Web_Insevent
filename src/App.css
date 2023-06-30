@@ -53,6 +53,28 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.sec3{
+  background-image: url(./assets/bgin7.png);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.sec4{
+  background-color: rgba(3,31,75,255);
+  background-size: cover;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 .img-about{
   max-width: 50%;
 }
@@ -91,6 +113,12 @@
 .headerFaQ{
   font-size: 55px;
 }
+.header-blog{
+  padding-top: 5%;
+}
+.sponsor{
+  font-size: 100px;
+}
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -101,7 +129,6 @@
     opacity: 1;
   }
 }
-
 .slide-in {
   animation: slideIn 1s ease forwards;
 }
@@ -148,4 +175,52 @@
 }
 .slide-Y4 {
   animation: slideY 3s ease forwards;
+}
+.card-blog{
+  background-color: rgba(3,31,75,255);
+  color: white;
+  box-shadow: 10px 6px 4px rgba(140, 129, 199, 0.5);
+}
+.header-ts{
+  font-size: 150px;
+  min-width: 100%;
+  color: transparent;
+  -webkit-text-stroke: 5px rgba(3,31,75,255);
+  text-shadow: 30px 60px 0px rgba(3,31,75,1);
+}
+.ts{
+  font-size: 150px;
+  color: white;
+}
+@media (max-width: 678px) {
+  .sec1 {
+    background-image: url(./assets/bgin7.png);
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .carou{
+    min-height: 50vh;
+  }
+  .caroucapt{
+    padding-bottom: 5%;
+  }
+  .header-about{
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 5px rgba(3,31,75,255); /* Lebar dan warna border */
+  }
+  .text-about{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: justify;
+  }
+  .question{
+    text-align: justify;
+  }
 }
