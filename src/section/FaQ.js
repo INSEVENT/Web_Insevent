@@ -51,7 +51,7 @@ export default function FaQ() {
         >
           FAQ
         </MDBTypography>
-        <p className="text-center mb-5">
+        <p ref={sectionRef1} className={showContent1 ? "slide-in text-center mb-5" : ""}>
           Find the answers for the most frequently asked questions below
         </p>
         <Container ref={sectionRef2} className={showContent2 ? "slide-in" : ""}>
