@@ -46,11 +46,12 @@ function About() {
       <Container>
         <Row ref={sectionRef1} className={showContent1 ? "slide-in" : ""}>
           <div className="header-about">INSEVENT</div>
+          <div className="header-about1">2023</div>
         </Row>
         <Row ref={sectionRef2} className={showContent2 ? "slide-in1 text-start d-flex align-items-center justify-content-center" : ""}>
           <Col xs={12} md={6} className="order-2 order-md-1">
             <Container>
-            <h2>About This Event</h2>
+            <div className="head-about">About This Event</div>
             <p className="text-about fs-6">{deskripsi_event.text}</p>
             <p className="text-about fs-6">{deskripsi_event.text2}</p>
             </Container>

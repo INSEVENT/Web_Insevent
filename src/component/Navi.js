@@ -49,7 +49,7 @@ function Navi() {
                   COMPETITION <TbPointFilled/>
                   </Nav.Link>
                   </Linkobj></Nav.Link>
-                <Nav.Link ><Linkobj to="Talkshow" activeClass="active" spy={true} smooth={true} offset={-70} duration={500}>
+                <Nav.Link ><Linkobj to="Talkshow" activeClass="active" spy={true} smooth={true} offset={-150} duration={500}>
                 <Nav.Link href='#Talkshow'>
                   TALKSHOW <TbPointFilled/>
                   </Nav.Link>

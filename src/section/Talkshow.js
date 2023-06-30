@@ -36,7 +36,7 @@ function Talkshow() {
     return(
         <>
             <div ref={sectionRef1} className={showContent1 ? "slide-in header-ts" : ""}>TALKSHOW</div>
-            <div ref={sectionRef2} className={showContent2 ? "slide-in ts" : ""}>COMING SOON</div>
+            <div ref={sectionRef2} className={showContent2 ? "slide-in ts" : ""}>COMING SOON!</div>
         </>
     )
 }

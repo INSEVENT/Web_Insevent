@@ -40,6 +40,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: monospace;
   color: white;
 }
 .sec2{
@@ -97,21 +98,45 @@
   padding-bottom: 7%;
 }
 .header-about{
-  font-size: 150px;
-  color: transparent;
-  -webkit-text-stroke: 5px rgba(3,31,75,255); /* Lebar dan warna border */
+  font-family:monospace;
+  font-size: 120px;
+  color:  #1d71cd;
+  /* -webkit-text-stroke: 6px #1d71cd;  */
+  text-shadow: 0 6px 5px #ffffffb6;
+}
+.header-about1{
+  font-family: monospace;
+  font-size: 75px;
+  color:  #1d71cd;
+  /* -webkit-text-stroke: 6px #1d71cd;  */
+  text-shadow: 0 6px 5px #ffffffb6;
+}
+.head-about{
+  font-size: 45px;
+  font-weight: 200px;
+  font-family: monospace;
 }
 .text-about{
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   text-align: justify;
+  font-family: sans-serif;
+}
+.subhead-FaQ{
+  color: rgba(255, 255, 255, 1);
+}
+.text-FaQ{
+  color: #3ba4fd; 
+  font-weight:800;
+  font-size: 18px;
 }
 .FaQ{
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 .headerFaQ{
   font-size: 55px;
+  color: #3ba4fd;
 }
 .header-blog{
   padding-top: 5%;
@@ -182,15 +207,19 @@
   box-shadow: 10px 6px 4px rgba(140, 129, 199, 0.5);
 }
 .header-ts{
+  font-family:fantasy;
   font-size: 150px;
   min-width: 100%;
   color: transparent;
-  -webkit-text-stroke: 5px rgba(3,31,75,255);
-  text-shadow: 30px 60px 0px rgba(3,31,75,1);
+  -webkit-text-stroke: 5px rgba(29,113,205,255);
+  text-shadow: 30px 60px 0px rgba(29,113,205,1);
 }
 .ts{
-  font-size: 150px;
+  padding-left: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 85px;
   color: white;
+  text-shadow: 0px 6px 6px rgba(29,113,205,1);
 }
 @media (max-width: 678px) {
   .sec1 {
@@ -208,15 +237,19 @@
     font-size: 50px;
   }
   .header-ts{
+    font-family:fantasy;
     font-size: 70px;
     min-width: 100%;
     color: transparent;
-    -webkit-text-stroke: 5px rgba(3,31,75,255);
-    text-shadow: 15px 30px 0px rgba(3,31,75,1);
+    -webkit-text-stroke: 5px rgba(29,113,205,255);
+    text-shadow: 15px 30px 0px rgba(29,113,205,1);
   }
   .ts{
-    font-size: 50px;
+    padding-left: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
     color: white;
+    text-shadow: 0px 6px 6px rgba(29,113,205,1);
   }
   .carou{
     min-height: 50vh;
@@ -225,9 +258,18 @@
     padding-bottom: 5%;
   }
   .header-about{
+    font-family:monospace;
     font-size: 80px;
-    color: transparent;
-    -webkit-text-stroke: 5px rgba(3,31,75,255); /* Lebar dan warna border */
+    color:  #1d71cd;
+    /* -webkit-text-stroke: 6px #1d71cd;  */
+    text-shadow: 0 2px 1.5px #ffffffb6;
+  }
+  .header-about1{
+    font-family: monospace;
+    font-size: 55px;
+    color:  #1d71cd;
+    /* -webkit-text-stroke: 6px #1d71cd;  */
+    text-shadow: 0 2px 1.5px #ffffffb6;
   }
   .text-about{
     font-size: 16px;

@@ -38,8 +38,7 @@ function App() {
         offset={-50} // Jarak offset dari elemen target (dalam piksel)
         spy={true}
         exact="true"
-        className="scroll-link"
-      >
+        className="scroll-link">
       </Link>
       <div className="sec1">
         <div id='Home'></div>

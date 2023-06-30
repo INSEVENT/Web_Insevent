@@ -44,24 +44,24 @@ export default function FaQ() {
     };
   }, [showContent1, showContent2]);
   return (
-    <MDBContainer className="FaQ">
+    <MDBContainer>
       <section>
         <MDBTypography
-          ref={sectionRef1} className={showContent1 ? "slide-in text-center mb-4 pb-2 text-primary fw-bold headerFaQ" : ""}
+          ref={sectionRef1} className={showContent1 ? "slide-in text-center mb-4 pb-2 text-FaQ fw-bold headerFaQ" : ""}
         >
           FAQ
         </MDBTypography>
-        <p ref={sectionRef1} className={showContent1 ? "slide-in text-center mb-5" : ""}>
+        <p ref={sectionRef1} className={showContent1 ? "slide-in text-center mb-5 subhead-FaQ" : ""}>
           Find the answers for the most frequently asked questions below
         </p>
         <Container ref={sectionRef2} className={showContent2 ? "slide-in" : ""}>
         <MDBRow className="question">
             <MDBCol md="6" lg="4" className="mb-4">
-                <MDBTypography tag="h6" className="mb-3 text-primary">
-                <MDBIcon far icon="paper-plane text-primary pe-2" /><br/>A simple
+                <MDBTypography className="mb-3 text-FaQ">
+                <MDBIcon far icon="paper-plane pe-2" /><br/>A simple
                 question?
                 </MDBTypography>
-                <p>
+                <p className="FaQ">
                 <strong>
                     <u>Absolutely!</u>
                 </strong>{" "}
@@ -71,11 +71,11 @@ export default function FaQ() {
                 </p>
             </MDBCol>
             <MDBCol md="6" lg="4" className="mb-4">
-                <MDBTypography tag="h6" className="mb-3 text-primary">
-                <MDBIcon fas icon="pen-alt text-primary pe-2" /><br/>A question that
+                <MDBTypography className="mb-3 text-FaQ">
+                <MDBIcon fas icon="pen-alt pe-2" /><br/>A question that
                 is longer then the previous one?
                 </MDBTypography>
-                <p>
+                <p className="FaQ">
                 <strong>
                     <u>Yes, it is possible!</u>
                 </strong>{" "}
@@ -84,29 +84,29 @@ export default function FaQ() {
                 </p>
             </MDBCol>
             <MDBCol md="6" lg="4" className="mb-4">
-                <MDBTypography tag="h6" className="mb-3 text-primary">
-                <MDBIcon fas icon="user text-primary pe-2" /><br/>A simple question?
+                <MDBTypography className="mb-3 text-FaQ">
+                <MDBIcon fas icon="user pe-2" /><br/>A simple question?
                 </MDBTypography>
-                <p>
+                <p className="FaQ">
                 Currently, we only offer monthly subscription. You can upgrade or
                 cancel your monthly account at any time with no further
                 obligation.
                 </p>
             </MDBCol>
             <MDBCol md="6" lg="4" className="mb-4">
-                <MDBTypography tag="h6" className="mb-3 text-primary">
-                <MDBIcon fas icon="rocket text-primary pe-2" /><br/>A simple question?
+                <MDBTypography className="mb-3 text-FaQ">
+                <MDBIcon fas icon="rocket pe-2" /><br/>A simple question?
                 </MDBTypography>
-                <p>
+                <p className="FaQ">
                 Yes. Go to the billing section of your dashboard and update your
                 payment information.
                 </p>
             </MDBCol>
             <MDBCol md="6" lg="4" className="mb-4">
-                <MDBTypography tag="h6" className="mb-3 text-primary">
-                <MDBIcon fas icon="home text-primary pe-2" /><br/>A simple question?
+                <MDBTypography className="mb-3 text-FaQ">
+                <MDBIcon fas icon="home pe-2" /><br/>A simple question?
                 </MDBTypography>
-                <p>
+                <p className="FaQ">
                 <strong>
                     <u>Unfortunately no</u>.
                 </strong>{" "}
@@ -114,11 +114,11 @@ export default function FaQ() {
                 </p>
             </MDBCol>
             <MDBCol md="6" lg="4" className="mb-4">
-                <MDBTypography tag="h6" className="mb-3 text-primary">
-                <MDBIcon fas icon="book-open text-primary pe-2" /><br/>Another
+                <MDBTypography className="mb-3 text-FaQ">
+                <MDBIcon fas icon="book-open pe-2" /><br/>Another
                 question that is longer than usual
                 </MDBTypography>
-                <p>
+                <p className="FaQ">
                 Of course! We’re happy to offer a free plan to anyone who wants to
                 try our service.
                 </p>
