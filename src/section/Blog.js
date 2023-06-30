@@ -57,7 +57,7 @@ function Blog() {
       <Container className="text-light" style={{ minWidth: "100%", minHeight: "100vh" }}>
         <h1 ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold header-blog' : ''}>Short heading goes here</h1>
         <div ref={navRef} className={showContent ? 'slide-Y fs-6 d-flex align-items-center justify-content-center mb-5' : ''}>
-          <Nav variant="pills" defaultActiveKey="#" className="flex-wrap">
+          <Nav variant="pills" defaultActiveKey="#" className="flex-wrap menu-comp">
             <Nav.Item>
               <Nav.Link href="#" className="text-light">
                 View all

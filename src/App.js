@@ -57,6 +57,7 @@ function App() {
         <Sponsor/>
       </div>
       <div className='sec2'>
+        <div id='Talkshow'></div>
         <Talkshow/>
       </div>
       <div className='sec2'>

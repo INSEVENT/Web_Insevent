@@ -237,4 +237,7 @@
   .question{
     text-align: justify;
   }
+  .menu-comp{
+    justify-content: center;
+  }
 }
