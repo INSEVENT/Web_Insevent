@@ -11,7 +11,7 @@ function About() {
     <div className="d-flex align-items-center justify-content-center" style={{ maxWidth: "100%", maxHeight: "100%" }}>
       <Container>
         <Row>
-          <div className="header-about fs-1 mt-5 mb-5">INSEVENT</div>
+          <div className="header-about">INSEVENT</div>
         </Row>
         <Row className="text-start d-flex align-items-center justify-content-center">
           <Col xs={12} md={6}>

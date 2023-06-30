@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {TbPointFilled} from 'react-icons/tb';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link as Linkobj } from 'react-scroll';
 
 function Navi() {
   return (
@@ -34,10 +35,10 @@ function Navi() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-center flex-grow-1">
-                <Nav.Link href="#home">HOME <TbPointFilled/></Nav.Link>
-                <Nav.Link href="#competition">COMPETITION <TbPointFilled/></Nav.Link>
-                <Nav.Link href="#talkshow">TALKSHOW <TbPointFilled/></Nav.Link>
-                <Nav.Link href="#about">ABOUT <TbPointFilled/></Nav.Link>
+                <Nav.Link href="#home"><Linkobj to="Home" activeClass="active" spy={true} smooth={true} offset={0} duration={500}>HOME <TbPointFilled/></Linkobj></Nav.Link>
+                <Nav.Link href="#about"><Linkobj to="About" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>ABOUT <TbPointFilled/></Linkobj></Nav.Link>
+                <Nav.Link href="#competition"><Linkobj to="Comp" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>COMPETITION <TbPointFilled/></Linkobj></Nav.Link>
+                <Nav.Link href="#talkshow"><Linkobj to="Talkshow" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>TALKSHOW <TbPointFilled/></Linkobj></Nav.Link>
                 </Nav>
                 <Nav>
                 <Nav.Link href="#login">LOGIN</Nav.Link>

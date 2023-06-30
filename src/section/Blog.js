@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Image, Nav } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import cardData from "../data/card";
 
