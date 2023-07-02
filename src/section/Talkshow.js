@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 function Talkshow() {
     const sectionRef1 = useRef(null);
   const sectionRef2 = useRef(null);
@@ -35,8 +36,10 @@ function Talkshow() {
   }, [showContent1, showContent2]);
     return(
         <>
+        <Container>
             <div ref={sectionRef1} className={showContent1 ? "slide-in header-ts" : ""}>TALKSHOW</div>
             <div ref={sectionRef2} className={showContent2 ? "slide-in ts" : ""}>COMING SOON!</div>
+        </Container>
         </>
     )
 }

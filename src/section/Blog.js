@@ -9,7 +9,6 @@ import React, { useRef, useEffect, useState } from 'react';
 
 function Blog() {
   const headingRef = useRef(null);
-  const paragraphRef = useRef(null);
   const navRef = useRef(null);
   const cardRefs = useRef([]);
 
@@ -18,7 +17,6 @@ function Blog() {
   useEffect(() => {
     const handleScroll = () => {
       const heading = headingRef.current;
-      const paragraph = paragraphRef.current;
       const nav = navRef.current;
       const headingTop = heading.getBoundingClientRect().top;
       const navTop = nav.getBoundingClientRect().top;
@@ -54,8 +52,9 @@ function Blog() {
 
   return (
     <div className="m-5">
-      <Container className="text-light" style={{ minWidth: "100%", minHeight: "100vh" }}>
-        <h1 ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold header-blog' : ''}>Short heading goes here</h1>
+      <Container className="text-light" style={{ minWidth: "100%", minHeight: "100vh", paddingBottom:'10%' }}>
+        <h1 ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold header-blog' : ''}>EVENT</h1>
+        <div ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold' : ''}>Berikut adalah beberapa event yang ada di INSEVENT.</div>
         <div ref={navRef} className={showContent ? 'slide-Y fs-6 d-flex align-items-center justify-content-center mb-5' : ''}>
           <Nav variant="pills" defaultActiveKey="#" className="flex-wrap menu-comp">
             <Nav.Item>
@@ -65,22 +64,22 @@ function Blog() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="#" eventKey="link-1" className="text-light">
-                Option 1
+                Kategori 1
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="#" eventKey="link-2" className="text-light">
-                Option 2
+                Kategori 2
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="#" eventKey="link-3" className="text-light">
-                Option 3
+                Kategori 3
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="#" eventKey="link-4" className="text-light">
-                Option 4
+                Kategori 4
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -92,7 +91,7 @@ function Blog() {
               <Col key={idx} ref={(el) => (cardRefs.current[idx] = el)} className={showContent ? `slide-Y${idx + 1}` : ''}>
                 <Card className="card-blog">
                   <div className="d-flex align-items-center" style={{ fontSize: "14px" }}>
-                    <Card.Img variant="" src={card.imgSrc} alt="Card Image" style={{ maxWidth: "25%", maxHeight: "25%" }} />
+                    <Card.Img variant="" src={card.imgSrc} alt="Card Image" className="card-img" />
                     <Card.Body className="text-start">
                       <div>
                         <Card.Text>

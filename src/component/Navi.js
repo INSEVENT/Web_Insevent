@@ -26,7 +26,7 @@ function Navi() {
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                 <img
                 alt=""
-                src="favicon.ico"
+                src="insevent.ico"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
