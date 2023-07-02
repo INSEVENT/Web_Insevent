@@ -17,7 +17,7 @@ export default function Foot() {
           <a href='https://www.tiktok.com/@inforsa_unmul' className='me-4 text-reset'>
             <BsTiktok style={{marginBottom:'5px'}}/>
           </a>
-          <a href='https://www.instagram.com/inforsa_unmul/' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/insevent2022/' className='me-4 text-reset'>
             <MDBIcon fab icon="instagram" />
           </a>
           <a href='https://open.spotify.com/show/22ah8JItXjL01kRH8flfXE' className='me-4 text-reset'>
@@ -27,7 +27,7 @@ export default function Foot() {
       </section>
       <div className='text-center p-4 Footers' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2023 Copyright:
-        <a className='text-reset fw-bold' href='#'>
+        <a className='text-reset fw-bold' href='https://www.instagram.com/inforsa_unmul/'>
           INFORSA-SI-UNMUL
         </a>
       </div>
