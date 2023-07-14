@@ -1,9 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../assets/bgin7.png';
+import img2 from '../assets/img1.png';
 import React, {useState, useEffect} from 'react';
 import {GoLocation} from 'react-icons/go';
-import logo from '../assets/logo.png';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import img from '../assets/img2.png'
 
 function Carou() {
     const [currentDate, setCurrentDate] = useState('');
@@ -19,7 +20,23 @@ function Carou() {
     );
   }, []);
   return (
-    <Carousel>
+    <Container style={{paddingTop:'7%'}}>
+    <div>
+      <Row>
+        <Col xs={12} md={8} className='carou-content1'>
+          <div className='carou-header'>Euphoria <br/>of Technological <br/>Innovation and Culture</div>
+        </Col>
+        <Col xs={12} md={4} className='carou-content2'>
+        {/* <img className='img-carou' src={img}></img> */}
+        <p>
+          <GoLocation/> Sistem Informasi FT UNMUL
+        </p>
+        <p className='carou-text'>Kolaborasi antara keterampilan teknologi dan menghidupkan kembali nilai-nilai kebudayaan lokal. </p>
+        <Button><a>See More</a></Button>
+        </Col>
+      </Row>
+    </div>
+    <Carousel className='carousel'>
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100 carou"
@@ -28,11 +45,6 @@ function Carou() {
         />
         <Carousel.Caption className='caroucapt'>
         <div style={{fontSize:'26px'}}>{currentDate}</div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <GoLocation/> Sistem Informasi FT UNMUL
-        </p>
-        <Button>See More</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -43,11 +55,6 @@ function Carou() {
         />
         <Carousel.Caption className='caroucapt'>
         <div style={{fontSize:'26px'}}>{currentDate}</div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <GoLocation/> Sistem Informasi FT UNMUL
-        </p>
-        <Button>See More</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -58,14 +65,10 @@ function Carou() {
         />
         <Carousel.Caption className='caroucapt'>
         <div style={{fontSize:'26px'}}>{currentDate}</div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <GoLocation/> Sistem Informasi FT UNMUL
-        </p>
-        <Button>See More</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </Container>
   );
 }
 
