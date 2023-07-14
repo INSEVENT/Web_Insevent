@@ -69,11 +69,11 @@ function App() {
             <div id="Home"></div>
             <Carou />
           </div>
-          <div className="sec2">
+          <div className="sec5">
             <div id="About"></div>
             <About />
           </div>
-          <div className="sec3" ref={targetRef}>
+          <div className="sec2" ref={targetRef}>
             <div id="Comp"></div>
             <Blog />
           </div>
@@ -84,7 +84,7 @@ function App() {
             <div id="Talkshow"></div>
             <Talkshow />
           </div>
-          <div className="sec2">
+          <div className="sec3">
             <div id="FaQ"></div>
             <FaQ />
           </div>

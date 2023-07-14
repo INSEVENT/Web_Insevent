@@ -35,7 +35,7 @@ function Navi() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-center flex-grow-1">
-                <Nav.Link><Linkobj to="Home" activeClass="active" spy={true} smooth={true} offset={0} duration={500}>
+                <Nav.Link><Linkobj to="Home" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>
                   <Nav.Link href='#Home'>
                   HOME <TbPointFilled/>
                   </Nav.Link>
