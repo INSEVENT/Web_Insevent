@@ -57,54 +57,51 @@ function App() {
     }
   }, [isLoaded]);
   return (
+    <div>{isLoaded ? (
+    <div className={`App ${isLoading ? "" : "hidden"}`}>
+    <Navi />
+    <div>
     <Router>
-      <div>
-        {isLoaded ? (
-          <div className={`App ${isLoading ? "" : "hidden"}`}>
-            <Navi />
-            <Link
-              to="Comp"
-              smooth={true}
-              duration={500}
-              delay={0}
-              offset={-50}
-              spy={true}
-              exact="true"
-              className="scroll-link"
-            ></Link>
-            <div className="sec1">
-              <div id="Home"></div>
-              <Carou />
-            </div>
-            <div className="sec2">
-              <div id="About"></div>
-              <About />
-            </div>
-            <div className="sec3" ref={targetRef}>
-              <div id="Comp"></div>
-              <Blog />
-            </div>
-            <div className="sec4">
-              <Sponsor />
-            </div>
-            <div className="sec2">
-              <div id="Talkshow"></div>
-              <Talkshow />
-            </div>
-            <div className="sec2">
-              <div id="FaQ"></div>
-              <FaQ />
-            </div>
-            <Foot />
-          </div>
-        ) : (
-          <LoadingPage />
-        )}
-      </div>
-      <Routes>
-        <Route path="/competition" element={<Competition />} />
-      </Routes>
+    <Routes>
+    <Route path="/" element=
+      {<div><Link
+          to="Comp" smooth={true}
+          duration={500} delay={0}
+          offset={-50} spy={true}
+          exact="true" className="scroll-link">
+        </Link>
+        <div className="sec1">
+        <div id="Home"></div>
+        <Carou />
+        </div>
+        <div className="sec2">
+        <div id="About"></div>
+        <About />
+        </div>
+        <div className="sec3" ref={targetRef}>
+        <div id="Comp"></div> 
+        <Blog />
+        </div>
+        <div className="sec4">
+        <Sponsor />
+        </div>
+        <div className="sec2">
+        <div id="Talkshow"></div>
+        <Talkshow />
+        </div>
+        <div className="sec2">
+        <div id="FaQ"></div>
+        <FaQ />
+        </div>
+        </div>}/>
+    <Route path="/competition" element={<Competition />} />
+    </Routes>
     </Router>
+    </div>
+    <Foot />
+    </div>
+    ) : (<LoadingPage />)}
+    </div>
   );
 }
 

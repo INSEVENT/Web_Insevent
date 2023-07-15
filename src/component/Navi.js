@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {TbPointFilled} from 'react-icons/tb';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 import { Link as Linkobj } from 'react-scroll';
 
 function Navi() {
@@ -11,7 +12,7 @@ function Navi() {
       {['md'].map((expand) => (
         <Navbar fixed="top" key={expand} expand={expand} className='Nav' data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand>
                 <span>INS</span><span className='event'>EVENT</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
