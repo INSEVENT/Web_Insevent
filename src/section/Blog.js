@@ -6,6 +6,7 @@ import Card from "react-bootstrap/Card";
 import cardData from "../data/card";
 import { BiChevronRight } from "react-icons/bi";
 import React, { useRef, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Blog() {
   const headingRef = useRef(null);
@@ -106,8 +107,10 @@ function Blog() {
                         </Card.Text>
                         <Card.Title className="fw-bold">{card.title}</Card.Title>
                         <Card.Text>{card.description}</Card.Text>
-                        <Card.Link href="#" className="text-decoration-none text-light">
-                          Read More <BiChevronRight className="ms-1" />
+                        <Card.Link className="text-decoration-none text-light">
+                          <Link to={card.readMore}>
+                            Read More <BiChevronRight className="ms-1" />
+                          </Link>
                         </Card.Link>
                       </div>
                     </Card.Body>
