@@ -7,7 +7,7 @@ const cardData = [
     time: "coming soon",
     title: "Lomba",
     description: "Description 1",
-    readMore: "#"
+    readMore: "/competition"
   },
   {
     imgSrc: img1,
@@ -15,7 +15,7 @@ const cardData = [
     time: "coming soon",
     title: "Talkshow",
     description: "Description 2",
-    readMore: "#"
+    readMore: "/talkshow"
   },
   {
     imgSrc: img1,
@@ -23,7 +23,7 @@ const cardData = [
     time: "coming soon",
     title: "Pameran",
     description: "Description 3",
-    readMore: "#"
+    readMore: "/pameran"
   },
   {
     imgSrc: img1,
@@ -31,7 +31,7 @@ const cardData = [
     time: "coming soon",
     title: "Bazar",
     description: "Description 4",
-    readMore: "#"
+    readMore: "/bazar"
   },
 ];
 
