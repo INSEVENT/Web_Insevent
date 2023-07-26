@@ -3,10 +3,26 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {TbPointFilled} from 'react-icons/tb';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Link } from 'react-router-dom';
 import { Link as Linkobj } from 'react-scroll';
+import { useEffect } from 'react';
 
 function Navi() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.Nav');
+      if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
       {['md'].map((expand) => (

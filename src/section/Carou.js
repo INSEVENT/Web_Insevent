@@ -32,6 +32,7 @@ function Carou() {
         <p>
           <GoLocation/> Sistem Informasi FT UNMUL
         </p>
+        {/* <div style={{fontSize:'26px'}}>{currentDate}</div>   */}
         <p className='carou-text'>Kolaborasi antara keterampilan teknologi dan menghidupkan kembali nilai-nilai kebudayaan lokal. </p>
         <Button><a>See More</a></Button>
         </Col>
@@ -45,7 +46,7 @@ function Carou() {
           alt="First slide"
         />
         <Carousel.Caption className='caroucapt'>
-        <div style={{fontSize:'26px'}}>{currentDate}</div>
+        
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>

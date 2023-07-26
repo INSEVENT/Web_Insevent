@@ -10,12 +10,7 @@
   opacity: 1;
 }
 .Nav{
-  background-color: rgba(1,0,2,255);
-  border-style:solid;
-  border-top:rgba(1,0,2,255) ;
-  border-left: rgba(1,0,2,255);
-  border-right: rgba(1,0,2,255);
-  border-bottom-color: rgba(3,31,75,255);
+  background-color: transparent;
 }
 .Footers{
   background-color: rgba(1,0,2,255);
@@ -25,7 +20,14 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.navbar.scrolled {
+  background-color: rgba(1,0,2,255);
+  border-style:solid;
+  border-top:rgba(1,0,2,255) ;
+  border-left: rgba(1,0,2,255);
+  border-right: rgba(1,0,2,255);
+  border-bottom-color: rgba(3,31,75,255);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -82,7 +84,7 @@
   color: white;
 }
 .sec4{
-  background-image: url(./assets/bgweb5.png);
+  background-image: linear-gradient(to bottom, rgba(48, 6, 77, 0) 0%, rgb(24, 5, 39) 100%),url(./assets/bgweb3.png);
   background-size: cover;
   min-height: 65vh;
   display: flex;

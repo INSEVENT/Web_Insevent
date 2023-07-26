@@ -89,7 +89,7 @@ function App() {
         <div id="Talkshow"></div>
         <Talkshow />
         </div>
-        <div className="sec2">
+        <div className="sec3">
         <div id="FaQ"></div>
         <FaQ />
         </div>
