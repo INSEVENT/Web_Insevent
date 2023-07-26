@@ -8,6 +8,15 @@ import { BiChevronRight } from "react-icons/bi";
 import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
+const limitWordsDescription = (text) => {
+  const words = text.split(' ');
+  if (words.length > 30) {
+    return words.slice(0, 30).join(' ') + '...';
+  }
+  return text;
+};
+
 function Blog() {
   const headingRef = useRef(null);
   const navRef = useRef(null);
@@ -51,6 +60,7 @@ function Blog() {
     };
   }, [showContent]);
 
+
   return (
     <div className="m-5">
       <Container className="text-light" style={{ minWidth: "100%", minHeight: "100vh", paddingBottom:'10%' }}>
@@ -86,7 +96,7 @@ function Blog() {
           </Nav>
         </div>
 
-        <div className="fs-6">
+        <div>
           <Row xs={1} md={2} className="g-4">
             {cardData.map((card, idx) => (
               <Col key={idx} ref={(el) => (cardRefs.current[idx] = el)} className={showContent ? `slide-Y${idx + 1}` : ''}>
@@ -106,10 +116,10 @@ function Blog() {
                           </div>
                         </Card.Text>
                         <Card.Title className="fw-bold">{card.title}</Card.Title>
-                        <Card.Text>{card.description}</Card.Text>
-                        <Card.Link className="text-decoration-none text-light">
+                        <Card.Text style={{ fontSize: "12px" }}>{limitWordsDescription(card.description)}</Card.Text>
+                        <Card.Link>
                           <Link to={card.readMore}>
-                            Read More <BiChevronRight className="ms-1" />
+                            Read More<BiChevronRight className="ms-1" />
                           </Link>
                         </Card.Link>
                       </div>
