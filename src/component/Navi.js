@@ -28,7 +28,7 @@ function Navi() {
       {['md'].map((expand) => (
         <Navbar fixed="top" key={expand} expand={expand} className='Nav' data-bs-theme="dark">
           <Container>
-            <Navbar.Brand>
+            <Navbar.Brand href='/'>
                 <span>INS</span><span className='event'>EVENT</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
