@@ -6,7 +6,7 @@ import Blog from "./section/Blog";
 import Foot from "./component/Foot";
 import FaQ from "./section/FaQ";
 import React, { useEffect, useState, useRef } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import Talkshow from "./section/Talkshow";
 import Sponsor from "./section/Sponsor";
 import { Container, Image } from "react-bootstrap";
@@ -34,6 +34,7 @@ function App() {
         });
       }, delay);
     }
+    else{}
   }, [isLoaded]);
   const LoadingPage = () => {
     return (
@@ -53,7 +54,7 @@ function App() {
     if (isLoaded) {
       setTimeout(() => {
         setIsLoading(false);
-      }, 500); // Menunda perubahan untuk memberikan waktu pada animasi fade in
+      }, 500);
     }
   }, [isLoaded]);
   return (
@@ -64,12 +65,7 @@ function App() {
     <Router>
     <Routes>
     <Route path="/" element=
-      {<div><Link
-          to="Comp" smooth={true}
-          duration={500} delay={0}
-          offset={-50} spy={true}
-          exact="true" className="scroll-link">
-        </Link>
+      {<div>
         <div className="sec1">
         <div id="Home"></div>
         <Carou />
@@ -106,4 +102,3 @@ function App() {
 }
 
 export default App;
-

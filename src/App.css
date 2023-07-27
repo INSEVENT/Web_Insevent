@@ -64,6 +64,7 @@
 .sec2{
   background-image: url(./assets/bgweb5.png);
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -206,6 +207,7 @@
   font-family: monospace;
 }
 .text-about{
+  background-color: rgba(0, 0, 0, 0.8);
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
   text-align: justify;

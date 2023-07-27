@@ -1,9 +1,13 @@
 import React from "react";
 import cardData from "../data/card";
+import { useEffect } from "react";
 
 function Competition() {
   const card = cardData[0];
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll ke atas saat halaman B dimuat
+  }, []);
+  
   return (
     <div className="sec1 d-flex justify-content-center align-items-center" style={{ minHeight: "150vh" }}>
       <div className="mt-5">
