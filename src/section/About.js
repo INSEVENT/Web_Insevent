@@ -52,8 +52,10 @@ function About() {
           <Col xs={12} md={6} className="order-2 order-md-1">
             <Container>
             <div className="head-about">About This Event</div>
-            <p className="text-about fs-6">{deskripsi_event.text}</p>
-            <p className="text-about fs-6">{deskripsi_event.text2}</p>
+            <div style={{ fontSize : "16px"}}>
+            <p>{deskripsi_event.text}</p>
+            <p>{deskripsi_event.text2}</p>
+            </div>
             </Container>
           </Col>
           <Col xs={12} md={6} className="order-1 order-md-2">
