@@ -67,33 +67,6 @@ function Blog() {
         <h1 ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold header-blog' : ''}>EVENT</h1>
         <div ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold' : ''}>Berikut adalah beberapa event yang ada di INSEVENT.</div>
         <div ref={navRef} className={showContent ? 'slide-Y fs-6 d-flex align-items-center justify-content-center mb-5' : ''}>
-          <Nav variant="pills" defaultActiveKey="#" className="flex-wrap menu-comp">
-            <Nav.Item>
-              <Nav.Link href="#" className="text-light">
-                View all
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#" eventKey="link-1" className="text-light">
-                Kategori 1
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#" eventKey="link-2" className="text-light">
-                Kategori 2
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#" eventKey="link-3" className="text-light">
-                Kategori 3
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#" eventKey="link-4" className="text-light">
-                Kategori 4
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
         </div>
 
         <div>
@@ -106,14 +79,9 @@ function Blog() {
                     <Card.Body className="text-start">
                       <div>
                         <Card.Text>
-                          <div className="d-flex align-items-center">
-                            <span className="bg-dark text-light d-inline-block p-1" style={{ fontSize: "10px" }}>
-                              {card.category}
-                            </span>
-                            <span className="ms-2" style={{ fontSize: "10px" }}>
+                            <span className="" style={{ fontSize: "10px" }}>
                               {card.time}
                             </span>
-                          </div>
                         </Card.Text>
                         <Card.Title className="fw-bold">{card.title}</Card.Title>
                         <Card.Text style={{ fontSize: "12px" }}>{limitWordsDescription(card.description)}</Card.Text>
