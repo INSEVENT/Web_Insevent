@@ -1,18 +1,19 @@
 import "./App.css";
-import Navi from "./component/Navi.js";
-import Carou from "./section/Carou";
-import About from "./section/About";
-import Blog from "./section/Blog";
-import Foot from "./component/Foot";
-import FaQ from "./section/FaQ";
+
 import React, { useEffect, useState, useRef } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import Talkshow from "./section/Talkshow";
-import Sponsor from "./section/Sponsor";
 import { Container, Image } from "react-bootstrap";
-import img1 from "./assets/logo.png";
+import img1 from "./assets/img/logo.png";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import Competition from "./pages/Comp";
+
+import Navbar from "./component/Navbar";
+import About from "./component/About";
+import Blog from "./component/Blog";
+import Footer from "./component/Footer";
+import FaQ from "./component/FaQ";
+import Talkshow from "./component/Talkshow";
+import Sponsor from "./component/Sponsor";
+import Home from "./component/Home";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -21,7 +22,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 4000);
+    }, 2500);
   }, []);
 
   useEffect(() => {
@@ -33,8 +34,8 @@ function App() {
           smooth: "easeInOutQuart",
         });
       }, delay);
+    } else {
     }
-    else{}
   }, [isLoaded]);
   const LoadingPage = () => {
     return (
@@ -58,45 +59,51 @@ function App() {
     }
   }, [isLoaded]);
   return (
-    <div>{isLoaded ? (
-    <div className={`App ${isLoading ? "" : "hidden"}`}>
-    <Navi />
     <div>
-    <Router>
-    <Routes>
-    <Route path="/" element=
-      {<div>
-        <div className="sec1">
-        <div id="Home"></div>
-        <Carou />
+      {isLoaded ? (
+        <div className={`App ${isLoading ? "" : "hidden"}`}>
+          <Navbar />
+          <div>
+            <Router>
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <div>
+                      <div className="sec1">
+                        <div id="Home"></div>
+                        <Home />
+                      </div>
+                      <div className="sec2">
+                        <div id="About"></div>
+                        <About />
+                      </div>
+                      <div className="sec3" ref={targetRef}>
+                        <div id="Comp"></div>
+                        <Blog />
+                      </div>
+                      <div className="sec4">
+                        <Sponsor />
+                      </div>
+                      <div className="sec2">
+                        <div id="Talkshow"></div>
+                        <Talkshow />
+                      </div>
+                      <div className="sec3">
+                        <div id="FaQ"></div>
+                        <FaQ />
+                      </div>
+                    </div>
+                  }
+                />
+              </Routes>
+            </Router>
+          </div>
+          <Footer />
         </div>
-        <div className="sec2">
-        <div id="About"></div>
-        <About />
-        </div>
-        <div className="sec3" ref={targetRef}>
-        <div id="Comp"></div> 
-        <Blog />
-        </div>
-        <div className="sec4">
-        <Sponsor />
-        </div>
-        <div className="sec2">
-        <div id="Talkshow"></div>
-        <Talkshow />
-        </div>
-        <div className="sec3">
-        <div id="FaQ"></div>
-        <FaQ />
-        </div>
-        </div>}/>
-    <Route path="/competition" element={<Competition />} />
-    </Routes>
-    </Router>
-    </div>
-    <Foot />
-    </div>
-    ) : (<LoadingPage />)}
+      ) : (
+        <LoadingPage />
+      )}
     </div>
   );
 }

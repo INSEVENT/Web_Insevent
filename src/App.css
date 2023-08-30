@@ -9,37 +9,46 @@
 .App.hidden {
   opacity: 1;
 }
+
 .Nav{
   background-color: transparent;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 30;
+  transition: all 0.5s;
 }
+
 .Footers{
   background-color: rgba(1,0,2,255);
   color: white;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 .navbar.scrolled {
   background-color: rgba(1,0,2,255);
-  border-style:solid;
-  border-top:rgba(1,0,2,255) ;
-  border-left: rgba(1,0,2,255);
-  border-right: rgba(1,0,2,255);
-  border-bottom-color: rgba(3,31,75,255);
+  transition: background-color 300ms linear;
 }
+.navbar.scrolled .nav-link {
+  color: white;
+  transition: color 500ms linear;
+}
+.navbar.scrolled .navbar-brand {
+  color: white;
+  transition: color 500ms linear;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .event{
   margin-left: 3px;
   background-color: white;
   color: black;
 }
 .sec1 {
-  background-image: url(./assets/bgweb3.png);
+  background-image: url(./assets/img/bgweb3.png);
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -47,7 +56,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   animation: fadeIn 1s ease-out;
 }
@@ -62,7 +71,7 @@
   }
 }
 .sec2{
-  background-image: url(./assets/bgweb5.png);
+  background-color: black;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -74,7 +83,10 @@
   color: white;
 }
 .sec3{
-  background-image: url(./assets/bgweb.png);
+  background-image: url(./assets/img/bgweb3.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -85,7 +97,7 @@
   color: white;
 }
 .sec4{
-  background-image: linear-gradient(to bottom, rgba(48, 6, 77, 0) 0%, rgb(24, 5, 39) 100%),url(./assets/bgweb3.png);
+  background-image: linear-gradient(to bottom, rgba(48, 6, 77, 0) 0%, rgb(24, 5, 39) 100%), url(./assets//img/bgweb3.png);
   background-size: cover;
   min-height: 65vh;
   display: flex;
@@ -97,7 +109,6 @@
   color: white;
 }
 .sec5{
-  background-image: url(./assets/bgweb4.png);
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -108,7 +119,7 @@
   color: white;
 }
 .loading-page{
-  background-image: url(./assets/bgweb.png);
+  background-image: url(./assets/img/bgweb.png);
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -187,25 +198,29 @@
   text-align: justify;
   font-size: 16px;
 }
-.header-about{
+.about-title{
   font-family: 'Poppins', sans-serif;
-  font-size: 8vw;
+  font-size: 7vw;
   color:  #1d71cd;
   /* -webkit-text-stroke: 6px #1d71cd;  */
   text-shadow: 0 6px 5px #ffffffb6;
 }
-.header-about1{
-  font-family: 'Poppins', sans-serif;
-  font-size: 6vw;
-  color:  #1d71cd;
-  /* -webkit-text-stroke: 6px #1d71cd;  */
-  text-shadow: 0 6px 5px #ffffffb6;
-}
-.head-about{
+
+.about-subtitle{
   font-size: 45px;
   font-weight: 200px;
-  font-family: monospace;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
+
+.about-subtitle > p {
+  font-size: 18px;
+  font-weight: 200px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+}
+
+
 .text-about{
   background-color: rgba(0, 0, 0, 0.8);
   font-size: 16px;
@@ -234,13 +249,31 @@
   padding-top: 3%;
   font-size: 10vw;
 }
-.sponsor{
-  font-size: 3VW;
-  padding-bottom: 5%;
+
+.sponsor-medpart{
+  max-width: 75%;
+  max-height: 100%;
+  margin-top: 3%;
 }
+
+.sponsor-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4vw;
+  color:  #1d71cd;
+  /* -webkit-text-stroke: 6px #1d71cd;  */
+  text-shadow: 0 6px 5px #000;
+}
+
+.sponsor-swiper{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+  height: auto;
+}
+
 .img-sponsor-medpart{
-  max-width: 50%;
-  margin-bottom: 5%;
+  width: 25%;
+  margin: 5%;
 }
 @keyframes slideIn {
   from {
@@ -323,9 +356,45 @@
   max-width: 50%;
   max-height: 50%;
 }
+
+.popup{
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.popup-header {
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.popup .popup-title{
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.popup .popup-description{
+  padding: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.popup-img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 12px;
+  object-fit: cover;
+  padding: 30px;
+}
+
 @media (max-width: 678px) {
   .sec1 {
-    background-image: url(./assets/bgweb3.png);
     background-size: cover;
     min-height: 50vh;
     display: flex;
