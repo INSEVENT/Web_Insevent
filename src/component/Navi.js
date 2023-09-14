@@ -5,6 +5,7 @@ import {TbPointFilled} from 'react-icons/tb';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link as Linkobj } from 'react-scroll';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navi() {
   useEffect(() => {
@@ -28,8 +29,8 @@ function Navi() {
       {['md'].map((expand) => (
         <Navbar fixed="top" key={expand} expand={expand} className='Nav' data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href='/'>
-                <span>INS</span><span className='event'>EVENT</span>
+            <Navbar.Brand>
+              <Link to='/' style={{textDecoration:'None'}}><span>INS</span><span className='event'>EVENT</span></Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

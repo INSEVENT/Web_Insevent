@@ -4,8 +4,9 @@ import img2 from '../assets/img4.jpg';
 import img3 from '../assets/img3.jpg';
 import React, {useState, useEffect} from 'react';
 import {GoLocation} from 'react-icons/go';
-import { Button, Col, Container, Row } from 'react-bootstrap';
-import img from '../assets/img2.png'
+import { Col, Container, Row } from 'react-bootstrap';
+// import Button from 'react-bootstrap/Button';
+import { Link } from 'react-scroll';
 
 function Carou() {
     const [currentDate, setCurrentDate] = useState('');
@@ -34,7 +35,9 @@ function Carou() {
         </p>
         {/* <div style={{fontSize:'26px'}}>{currentDate}</div>   */}
         <p className='carou-text'>Kolaborasi antara keterampilan teknologi dan menghidupkan kembali nilai-nilai kebudayaan lokal. </p>
-        <Button><a>See More</a></Button>
+        <Link to="About" activeClass="active" spy={true} smooth={true} offset={-50} duration={500}>
+          <button className='button-carou'>See More</button>
+        </Link>
         </Col>
       </Row>
     </div>
