@@ -2,11 +2,19 @@ import React, { useRef, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { deskripsi_event } from "../data/about";
 import { Image } from "react-bootstrap";
-import img1 from "../assets/logo.png";
+import img1 from "../assets/img/logo.png";
 
-function About() {
+const deskripsi_event = {
+  text: [
+    `INSEVENT (Information System Event) merupakan sebuah kegiatan tahunan  yang diselenggarakan oleh program studi Sistem Informasi di Fakultas Teknik, Universitas Mulawarman. Tema INSEVENT tahun ini adalah "Euphoria Of Technological Innovation and Culture (ECHOTURE)".`,
+  ],
+  text2: [
+    ` INSEVENT menyelenggarakan berbagai kegiatan akademik maupun non-akademik, termasuk seminar dan berbagai kompetisi lainnya.`,
+  ],
+};
+
+const About= () => {
   const sectionRef1 = useRef(null);
   const sectionRef2 = useRef(null);
   const [showContent1, setShowContent1] = useState(false);
@@ -42,22 +50,38 @@ function About() {
   }, [showContent1, showContent2]);
 
   return (
-    <div className="d-flex align-items-center justify-content-center" style={{ maxWidth: "100%", maxHeight: "100%" }}>
+    <div
+      className="d-flex align-items-center justify-content-center"
+      style={{ maxWidth: "100%", maxHeight: "100%" }}
+    >
       <Container>
         <Row ref={sectionRef1} className={showContent1 ? "slide-in" : ""}>
-          <div className="header-about">INSEVENT</div>
-          <div className="header-about1">2023</div>
+          <div className="about-title">INSEVENT</div>
+          <div className="about-title">2023</div>
         </Row>
-        <Row ref={sectionRef2} className={showContent2 ? "slide-in1 text-start d-flex align-items-center justify-content-center" : ""}>
+        <Row
+          ref={sectionRef2}
+          className={
+            showContent2
+              ? "slide-in1 text-start d-flex align-items-center justify-content-center"
+              : ""
+          }
+        >
           <Col xs={12} md={6} className="order-2 order-md-1">
             <Container>
-            <div className="head-about">About This Event</div>
-            <p className="text-about fs-6">{deskripsi_event.text}</p>
-            <p className="text-about fs-6">{deskripsi_event.text2}</p>
+              <div className="about-subtitle">
+                About This Event
+                <p>{deskripsi_event.text}</p>
+                <p>{deskripsi_event.text2}</p>
+              </div>
             </Container>
           </Col>
           <Col xs={12} md={6} className="order-1 order-md-2">
-            <Image src={img1} className="img-fluid" style={{ maxWidth: "100%", maxHeight: "100%" }} />
+            <Image
+              src={img1}
+              className="img-fluid"
+              style={{ maxWidth: "100%", maxHeight: "100%" }}
+            />
           </Col>
         </Row>
       </Container>

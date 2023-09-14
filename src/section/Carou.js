@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from '../assets/img1.jpg';
-import img2 from '../assets/img4.jpg';
-import img3 from '../assets/img3.jpg';
+import img1 from '../assets/img/img1.jpg';
+import img2 from '../assets/img/img4.jpg';
+import img3 from '../assets/img/img3.jpg';
 import React, {useState, useEffect} from 'react';
 import {GoLocation} from 'react-icons/go';
 import { Col, Container, Row } from 'react-bootstrap';

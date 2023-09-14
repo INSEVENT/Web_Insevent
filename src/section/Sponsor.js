@@ -1,47 +1,54 @@
-import React, { Component } from "react";
 import { Container } from "react-bootstrap";
-import Slider from "react-slick";
-import inforsa from '../assets/inforsa.png';
-import insevent from '../assets/logo.png';
+import Inforsa from "../assets/img/inforsa.png";
+import Insevent from "../assets/img/logo.png";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default class Sponsor extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 1500,
-      autoplaySpeed: 1,
-      cssEase: "linear"
-    };
-    return (
-        <Container className="sponsor-medpart">
-        <div>
-            <div className="sponsor">SPONSOR AND MEDIA PARTNER</div>
-            <Slider {...settings}>
-            <div>
-                <img src={inforsa} alt="img1" className="img-sponsor-medpart"></img>
-            </div>
-            <div>
-                <img src={insevent} alt="img1" className="img-sponsor-medpart"></img>
-            </div>
-            <div>
-                <img src={inforsa} alt="img1" className="img-sponsor-medpart"></img>    
-            </div>
-            <div>
-                <img src={insevent} alt="img1" className="img-sponsor-medpart"></img>
-            </div>
-            <div>
-                <img src={inforsa} alt="img1" className="img-sponsor-medpart"></img>
-            </div>
-            <div>
-                <img src={insevent} alt="img1" className="img-sponsor-medpart"></img>
-            </div>
-            </Slider>
-        </div>
-        </Container>
-    );
-  }
-}
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { EffectCoverflow, Autoplay } from "swiper/modules";
+
+const Sponsor = () => {
+  return (
+    <Container className="sponsor-medpart">
+      <div>
+        <h1 className="sponsor-title">Sponsor and Media Partner</h1>
+        <Swiper
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: true,
+          }}
+          modules={[EffectCoverflow, Autoplay]} // Include Autoplay here
+          autoplay={true}
+          className="sponsor-swiper"
+        >
+          <SwiperSlide>
+            <img src={Inforsa} alt="Inforsa Logo" className="img-sponsor-medpart"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Insevent} alt="Insevent Logo" className="img-sponsor-medpart"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Inforsa} alt="Inforsa Logo" className="img-sponsor-medpart"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Insevent} alt="Insevent Logo" className="img-sponsor-medpart"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Inforsa} alt="Inforsa Logo" className="img-sponsor-medpart"/>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </Container>
+  );
+};
+
+export default Sponsor;

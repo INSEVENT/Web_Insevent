@@ -1,9 +1,9 @@
 import "./App.css";
 import Navi from "./component/Navi.js";
-import Foot from "./component/Foot";
+import Foot from "./component/Footer";
 import React, { useEffect, useState } from "react";
 import { Container, Image } from "react-bootstrap";
-import img1 from "./assets/logo.png";
+import img1 from "./assets/img/logo.png";
 import { Routes, Route } from "react-router-dom";
 import Competition from "./pages/Comp";
 import Main from "./pages/Main";
@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 4000);
+    }, 2500);
   }, []);
   const LoadingPage = () => {
     return(

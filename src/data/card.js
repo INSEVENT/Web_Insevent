@@ -1,4 +1,4 @@
-import img1 from "../assets/logo.png";
+import img1 from "../assets/img/logo.png";
 import moment from 'moment';
 
 function getCurrentTime() {

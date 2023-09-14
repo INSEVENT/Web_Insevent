@@ -65,7 +65,7 @@ function Blog() {
     <div className="m-5">
       <Container className="text-light" style={{ minWidth: "100%", minHeight: "100vh", paddingBottom:'10%' }}>
         <h1 ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold header-blog' : ''}>EVENT</h1>
-        <div ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold subheader-blog' : ''}>Berikut adalah beberapa event yang ada di INSEVENT.</div>
+        <div ref={headingRef} className={showContent ? 'slide-Y mb-4 fw-bold' : ''}>Berikut adalah beberapa event yang ada di INSEVENT.</div>
         <div ref={navRef} className={showContent ? 'slide-Y fs-6 d-flex align-items-center justify-content-center mb-5' : ''}>
           <Nav variant="pills" defaultActiveKey="#" className="flex-wrap menu-comp">
             <Nav.Item>
