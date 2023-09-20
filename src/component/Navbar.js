@@ -75,8 +75,7 @@ function Navi() {
                       duration={100}
                     >
                       <Nav.Link href="#Home">
-                        <UilEstate size="20"/>
-                        HOME
+                        <UilEstate size="20"/> HOME
                       </Nav.Link>
                     </Linkobj>
                   </Nav.Link>
@@ -90,8 +89,7 @@ function Navi() {
                       duration={100}
                     >
                       <Nav.Link href="#About">
-                        <UilInfoCircle size="20"/>
-                        ABOUT
+                        <UilInfoCircle size="20"/> ABOUT
                       </Nav.Link>
                     </Linkobj>
                   </Nav.Link>
@@ -105,8 +103,7 @@ function Navi() {
                       duration={100}
                     >
                       <Nav.Link href="#Competition">
-                        <UilTrophy size="20"/>
-                        COMPETITION
+                        <UilTrophy size="20"/> EVENT
                       </Nav.Link>
                     </Linkobj>
                   </Nav.Link>
@@ -120,8 +117,7 @@ function Navi() {
                       duration={100}
                     >
                       <Nav.Link href="#Talkshow">
-                        <UilMicrophone size="20"/>
-                        TALKSHOW
+                        <UilMicrophone size="20"/> TALKSHOW
                       </Nav.Link>
                     </Linkobj>
                   </Nav.Link>

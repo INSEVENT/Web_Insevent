@@ -486,6 +486,14 @@
   .menu-comp{
     justify-content: center;
   }
+  .ListGroup{
+    margin-top: 15%;
+    text-align: left;
+    position: fixed;
+  }
+  .comp-info{
+    font-size: 12px;
+  }
 }
 @media (max-width: 360px) {
   .card-img{
@@ -495,11 +503,35 @@
 }
 .ListGroup{
   text-align: left;
+  position: fixed;
 }
 .ListGroup-item{
   padding-bottom: 5%;
 }
 .ListGroup-header{
+  font-family: sans-serif;
+  font-size: 2.5vw;
+  padding-bottom: 5%;
+}
+.comp-header{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 3vw;
+  font-size: 5vw;
+}
+.img-comp{
+  max-width: 100%;
+}
+.timeline{
+  background-color: white;
+  width: 100%;
+  min-height: 1vh;
+}
+.col-card{
+  max-width: 30%;
+}
+.card-fee{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
 }

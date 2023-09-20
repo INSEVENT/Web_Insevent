@@ -1,5 +1,5 @@
 import "./App.css";
-import Navi from "./component/Navi.js";
+import Navi from "./component/Navbar.js";
 import Foot from "./component/Footer";
 import React, { useEffect, useState } from "react";
 import { Container, Image } from "react-bootstrap";
