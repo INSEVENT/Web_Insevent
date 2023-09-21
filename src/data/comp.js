@@ -16,6 +16,7 @@ const compdata = [
   {
     imgSrc: poster,
     category: "Nasional",
+    lokasi:'Online',
     title: "Poster",
     time: "21 September - 7 Oktober 2023",
     description: `ini deskripsi lombanya`,
@@ -31,11 +32,16 @@ const compdata = [
       j2:'Juara 2 : Uang Pembinaan + Sertifikat',
       j3:'Juara 3 : Uang Pembinaan + Sertifikat',
       jfav:'Juara Favorit : Sertifikat',
+    },
+    link :{
+      lomba: 'https://bit.ly/LombaNasionalINSEVENT2023',
+      guidebook :'https://bit.ly/POSTER_INSEVENT2023'
     }
   },
   {
     imgSrc: vidkref,
     category: "Nasional",
+    lokasi:'Online',
     title: "Video Kreatif",
     time: getCurrentTime(),
     description: `ini deskripsi lombanya`,
@@ -51,11 +57,16 @@ const compdata = [
       j2:'Juara 2 : Uang Pembinaan + Sertifikat',
       j3:'Juara 3 : Uang Pembinaan + Sertifikat',
       jfav:'Juara Favorit : Sertifikat',
+    },
+    link :{
+      lomba: 'https://bit.ly/LombaNasionalINSEVENT2023',
+      guidebook :'https://bit.ly/VIDKREF_INSEVENT2023'
     }
   },
   {
     imgSrc: uiux,
     category: "Nasional",
+    lokasi:'Online',
     title: "UI UX",
     time: getCurrentTime(),
     description: `ini deskripsi lombanya`,
@@ -71,11 +82,16 @@ const compdata = [
       j2:'Juara 2 : Uang Pembinaan + Sertifikat',
       j3:'Juara 3 : Uang Pembinaan + Sertifikat',
       jfav:'Juara Favorit : Sertifikat',
+    },
+    link :{
+      lomba: 'https://bit.ly/LombaNasionalINSEVENT2023',
+      guidebook :'https://bit.ly/UIUX_INSEVENT2023'
     }
   },
   {
     imgSrc: esport,
     category: "Regional",
+    lokasi:'Soon',
     title: "Mobile Legends",
     time: getCurrentTime(),
     description: `ini deskripsi lombanya`,
@@ -91,11 +107,16 @@ const compdata = [
       j2:'Juara 2 : Uang Pembinaan + Sertifikat',
       j3:'Juara 3 : Uang Pembinaan + Sertifikat',
       MvP:'MVP : Sertifikat',
+    },
+    link :{
+      lomba: 'https://bit.ly/LombaNasionalINSEVENT2023',
+      guidebook :'https://bit.ly/ESPORT_INSEVENT2023'
     }
   },
   {
     imgSrc: dance,
     category: "Regional",
+    lokasi:'Soon',
     title: "Modern Dance",
     time: getCurrentTime(),
     description: `ini deskripsi lombanya`,
@@ -111,11 +132,16 @@ const compdata = [
       j2:'Juara 2 : Uang Pembinaan + Sertifikat',
       j3:'Juara 3 : Uang Pembinaan + Sertifikat',
       jfav:'Juara Favorit : Sertifikat',
+    },
+    link :{
+      lomba: 'https://bit.ly/LombaNasionalINSEVENT2023',
+      guidebook :'https://bit.ly/MODERNDANCE_INSEVENT2023'
     }
   },
   {
     imgSrc: tari,
     category: "Regional",
+    lokasi:'Soon',
     title: "Tari Tradisional",
     time: getCurrentTime(),
     description: `ini deskripsi lombanya`,
@@ -131,11 +157,16 @@ const compdata = [
       j2:'Juara 2 : Uang Pembinaan + Sertifikat',
       j3:'Juara 3 : Uang Pembinaan + Sertifikat',
       jfav:'Juara Favorit : Sertifikat',
+    },
+    link :{
+      lomba: 'https://bit.ly/LombaNasionalINSEVENT2023',
+      guidebook :'https://bit.ly/TARITRADISIONAL_INSEVENT2023'
     }
   },
   {
     imgSrc: akustik,
     category: "Regional",
+    lokasi:'Soon',
     title: "Akustik",
     time: getCurrentTime(),
     description: `ini deskripsi lombanya`,
@@ -151,6 +182,10 @@ const compdata = [
       j2:'Juara 2 : Uang Pembinaan + Sertifikat',
       j3:'Juara 3 : Uang Pembinaan + Sertifikat',
       jfav:'Juara Favorit : Sertifikat',
+    },
+    link :{
+      lomba: 'https://bit.ly/LombaNasionalINSEVENT2023',
+      guidebook :'https://bit.ly/AKUSTIK_INSEVENT2023'
     }
   },
 ];

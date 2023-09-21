@@ -7,6 +7,7 @@ import img1 from "./assets/img/logo.png";
 import { Routes, Route } from "react-router-dom";
 import Competition from "./pages/Comp";
 import Main from "./pages/Main";
+import Talkshow from "./pages/Talkshow";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -38,6 +39,7 @@ function App() {
     <Routes>
     <Route path="/" element={<Main/>}/>
     <Route path="/competition" element={<Competition />} />
+    <Route path="/talkshow" element={<Talkshow />} />
     </Routes>
     </div>
     <Foot />
